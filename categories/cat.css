@@ -1,0 +1,188 @@
+/* imports fonts from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter";
+}
+
+nav {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgb(255, 255, 255, 0.3);
+    display: flex;
+    padding-left: 3%;
+    padding-right: 3%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 20;
+}
+
+.logo {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logoh {
+    color: black;
+}
+
+.gif {
+    width: 30px;
+    width: 30px;
+    object-fit: contain;
+    object-position: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Space Grotesk";
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    padding: 10px;
+    color: grey;
+    font-size: smaller;
+    line-height: 28px;
+}
+
+.sign {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: grey;
+    cursor: pointer;
+}
+
+.signup {
+    background-color: #3155f4;
+    color: white;
+}
+
+.signin {
+    background-color: #f0f6ff;
+    color: #3155f4;
+}
+
+.signin:hover {
+    background-color: #c7e0ff;
+}
+
+.signup:active {
+    background-color: blue;
+}
+
+.leftbar {
+    background-color: white;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    position: fixed;
+    padding: 1%;
+    top: 61px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 200px;
+    border-right: 1px solid #ccc;
+    z-index: 10;
+}
+
+.two {
+    width: 170px;
+}
+
+.home {
+    font-size: smaller !important;
+    padding: 0;
+}
+
+.icon:hover {
+    cursor: pointer;
+    background-color: #f0f6ff;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: 10%;
+    width: 100%;
+}
+
+.high {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: 10%;
+    width: 100%;
+    background-color: #c7e0ff;
+    color: white;
+}
+
+.highh {
+    color: #3155f4;
+}
+
+.img {
+    object-fit: contain;
+    object-position: center;
+}
+
+.rightbar {
+    padding-top: 60px;
+    padding-left: 250px;
+    padding-bottom: 60px;
+    padding-right: 20px;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.category {
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.category:hover {
+    background-color: #c7e0ff;
+    border: 1px solid #c7e0ff;
+}
+
+.icat {
+    width: 100%;
+    object-fit: contain;
+    object-position: top;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.pcat {
+    padding: 0;
+}
