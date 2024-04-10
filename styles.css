@@ -184,9 +184,70 @@ p {
 }
 
 .rightbar {
-    padding-top: 60px;
-    padding-left: 250px;
+    padding-top: 75px;
+    padding-left: 245px;
     padding-bottom: 20px;
     padding-right: 20px;
     height: 3000px;
+}
+
+.featured {
+    text-align: center;
+    padding: 2%;
+    background-color: #c7e0ff;
+    border-radius: 5px;
+}
+
+.featuredb {
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    font-weight: 900;
+    color: #3155f4;
+}
+
+.featuredp {
+    margin: 0;
+    color: #3155f4;
+}
+
+.featureda {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #3155f43d;
+    color: #3155f4;
+}
+
+.books {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.book {
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #3155f43d;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.fav {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.book p {
+    margin: 0;
+    padding: 0;
+    color: #3155f4;
+}
+
+.book1 {
+    width: 100%;
 }
