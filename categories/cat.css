@@ -13,11 +13,11 @@ nav {
     -webkit-backdrop-filter: blur(10px);
     background-color: rgb(255, 255, 255, 0.3);
     display: flex;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #cccccc7a;
     position: fixed;
     left: 0;
     right: 0;
@@ -41,6 +41,32 @@ nav {
     width: 30px;
     object-fit: contain;
     object-position: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: #f1f2f4;
+    padding: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 30%;
+    border-radius: 5px;
+    gap: 10px;
+    outline: 1px solid #3155f43d;
+}
+
+.searchi {
+    font-family: "Space Grotesk";
+    width: 100%;
+    border: none;
+    outline: none;
+    border-right: 1px solid #cccccc7a;
+    background-color: transparent;
+}
+
+.searchimg {
+    cursor: pointer;
 }
 
 h1,
@@ -105,7 +131,7 @@ p {
     left: 0;
     right: 0;
     width: 200px;
-    border-right: 1px solid #ccc;
+    border-right: 1px solid #cccccc7a;
     z-index: 10;
 }
 

@@ -13,11 +13,11 @@ nav {
     -webkit-backdrop-filter: blur(10px);
     background-color: rgb(255, 255, 255, 0.3);
     display: flex;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #cccccc7a;
     position: fixed;
     left: 0;
     right: 0;
@@ -41,6 +41,32 @@ nav {
     width: 30px;
     object-fit: contain;
     object-position: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: #f1f2f4;
+    padding: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 30%;
+    border-radius: 5px;
+    gap: 10px;
+    outline: 1px solid #3155f43d;
+}
+
+.searchi {
+    font-family: "Space Grotesk";
+    width: 100%;
+    border: none;
+    outline: none;
+    border-right: 1px solid #cccccc7a;
+    background-color: transparent;
+}
+
+.searchimg {
+    cursor: pointer;
 }
 
 .accounts {
@@ -138,7 +164,7 @@ p {
     left: 0;
     right: 0;
     width: 200px;
-    border-right: 1px solid #ccc;
+    border-right: 1px solid #cccccc7a;
     z-index: 10;
 }
 
@@ -188,7 +214,6 @@ p {
     padding-left: 245px;
     padding-bottom: 20px;
     padding-right: 20px;
-    height: 3000px;
 }
 
 .featured {
@@ -250,4 +275,88 @@ p {
 
 .book1 {
     width: 100%;
+}
+
+.trending-section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.trending {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trend {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.trend h1 {
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.catss {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.trendb {
+    border: 1px solid #cccccc7a;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: smaller;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.trendb:hover {
+    color: #3155f4;
+    border: 1px solid #3155f43d;
+}
+
+.trendb p {
+    padding: 5px;
+    margin: 0;
+}
+
+.trendb p:hover {
+    color: #3155f4;
+}
+
+.trendingb {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.trends {
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #3155f43d;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-bottom: 10px;
+}
+
+.trending-books {
+    width: 100%;
+}
+
+.trendh {
+    font-size: 18px;
+    margin: 0;
+    padding: 10px;
+}
+
+.trendp {
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
 }
