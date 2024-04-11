@@ -9,10 +9,11 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background-color: #3155f4;
 }
 
 main {
-    border: 1px solid #ccc;
+    background-color: white;
     padding: 3%;
     border-radius: 10px;
     display: flex;

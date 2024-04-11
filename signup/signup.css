@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 body {
+    background-color: #3155f4;
     font-family: "Inter";
     margin: 0px;
     display: flex;
@@ -13,9 +14,9 @@ body {
 }
 
 main {
+    background-color: white;
     height: fit-content;
     width: 350px;
-    border: 1px solid #ccc;
     padding: 3%;
     display: flex;
     flex-direction: column;
