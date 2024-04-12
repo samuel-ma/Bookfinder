@@ -58,7 +58,7 @@ nav {
 }
 
 .searchi {
-    font-family: "Space Grotesk";
+    font-family: "Inter";
     width: 100%;
     border: none;
     outline: none;
@@ -481,4 +481,40 @@ p {
 .sboxp {
     margin: 0;
     padding: 0;
+}
+
+.add-book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 150;
+}
+
+.addb {
+    cursor: pointer;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #3155f4;
+}
+
+.refresh {
+    cursor: pointer;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #cccccc7a;
 }

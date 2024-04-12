@@ -1,0 +1,101 @@
+[
+    {
+        "id": 0,
+        "title": "Heabeas Corpus",
+        "img": "/books/trending.jpg",
+        "author": "Rebecca Zanetti",
+        "date": 2018,
+        "category": "Recipes",
+        "rating": 5
+    },
+
+    {
+        "id": 1,
+        "title": "Think Again",
+        "img": "/books/trending2.jpg",
+        "author": "Adam Grant",
+        "date": 2012,
+        "category": "History",
+        "rating": 3.1
+    },
+
+    {
+        "id": 2,
+        "title": "Big Magic",
+        "img": "/books/trending3.jpg",
+        "author": "Elizabeth Gilbert",
+        "date": 2011,
+        "category": "Adventure",
+        "rating": 3.3
+    },
+
+    {
+        "id": 3,
+        "title": "Empire of Pain",
+        "img": "/books/trending4.jpg",
+        "author": "Patrick Radden",
+        "date": 2017,
+        "category": "Adventure",
+        "rating": 4.5
+    },
+
+    {
+        "id": 4,
+        "title": "Never Split the Difference",
+        "img": "/books/trending5.jpg",
+        "author": "Chris Voss",
+        "date": 2003,
+        "category": "Business",
+        "rating": 4.7
+    },
+
+    {
+        "id": 5,
+        "title": "Unresonable Hospitality",
+        "img": "/books/trending6.jpg",
+        "author": "Will Guidara",
+        "date": 2022,
+        "category": "Adventure",
+        "rating": 2.9
+    },
+
+    {
+        "id": 6,
+        "title": "Dare to Lead",
+        "img": "/books/trending7.jpg",
+        "author": "Brene Brown",
+        "date": 2019,
+        "category": "Business",
+        "rating": 4.4
+    },
+
+    {
+        "id": 7,
+        "title": "Hidden Potential",
+        "img": "/books/trending8.jpg",
+        "author": "Adam Grant",
+        "date": 2017,
+        "category": "Action",
+        "rating": 3.5
+    },
+
+    {
+        "id": 8,
+        "title": "Other Side of Disappearing",
+        "img": "/books/trending9.jpg",
+        "author": "Kate Clayborn",
+        "date": 2016,
+        "category": "Comedy",
+        "rating": 3.3
+    },
+
+    {
+        "id": 9,
+        "title": "Murder Road",
+        "img": "/books/trending10.jpg",
+        "author": "Simone St James",
+        "date": 2017,
+        "category": "Horror",
+        "rating": 4.5
+    }
+]

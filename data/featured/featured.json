@@ -1,0 +1,61 @@
+[
+    {
+        "id": 0,
+        "title": "Funny Story",
+        "img": "/books/book (1).jpg",
+        "author": "Julia Whelan",
+        "date": 2018,
+        "category": "Comedy",
+        "rating": 5
+    },
+
+    {
+        "id": 1,
+        "title": "Happy Place",
+        "img": "/books/book (2).jpg",
+        "author": "Emily Henry",
+        "date": 2002,
+        "category": "Adventure",
+        "rating": 3.8
+    },
+
+    {
+        "id": 2,
+        "title": "Good to Great",
+        "img": "/books/book (3).jpg",
+        "author": "Jim Collins",
+        "date": 2016,
+        "category": "Business",
+        "rating": 4
+    },
+
+    {
+        "id": 3,
+        "title": "It Ends With Us",
+        "img": "/books/book (4).jpg",
+        "author": "Colleen Hoover",
+        "date": 2017,
+        "category": "Adventure",
+        "rating": 4.5
+    },
+
+    {
+        "id": 4,
+        "title": "The Hunger Games",
+        "img": "/books/book (5).jpg",
+        "author": "Suzanne Collins",
+        "date": 2022,
+        "category": "Action",
+        "rating": 4
+    },
+
+    {
+        "id": 5,
+        "title": "The Hunter",
+        "img": "/books/book (6).jpg",
+        "author": "Tana French",
+        "date": 2016,
+        "category": "Action",
+        "rating": 3.9
+    }
+]
