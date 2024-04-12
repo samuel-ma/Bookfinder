@@ -20,12 +20,57 @@
             </section>
         </a>
 
-        <section class="search">
+        <section class="search" id="openModalBtn">
             <input class="searchi" type="text" placeholder="Author, Category or Title...">
             <img class="searchimg" width="24" height="24"
                 src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/24/4D4D4D/external-search-twitter-flatart-icons-outline-flatarticons.png"
                 alt="external-search-twitter-flatart-icons-outline-flatarticons" />
         </section>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="sbox">
+                    <img class="searchimg" width="24" height="24"
+                        src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/24/4D4D4D/external-search-twitter-flatart-icons-outline-flatarticons.png"
+                        alt="external-search-twitter-flatart-icons-outline-flatarticons" />
+
+                    <input class="sboxi" type="text" placeholder="Search what your looking for...">
+
+                    <img class="close" width="20" height="20"
+                        src="https://img.icons8.com/ios/24/4D4D4D/delete-sign--v1.png" alt="delete-sign--v1" />
+                </div>
+
+                <div class="sbox2">
+                    <p class="sboxh">Recent Search...</p>
+
+                    <div class="sboxb">
+                        <img width="20" height="20" src="https://img.icons8.com/parakeet-line/20/4D4D4D/book.png"
+                            alt="book" />
+                        <p class="sboxp">The Hunter</p>
+                    </div>
+
+                    <div class="sboxb">
+                        <img width="20" height="20" src="https://img.icons8.com/parakeet-line/20/4D4D4D/book.png"
+                            alt="book" />
+                        <p class="sboxp">Ends with Us</p>
+                    </div>
+
+                    <div class="sboxb">
+                        <img width="20" height="20" src="https://img.icons8.com/parakeet-line/20/4D4D4D/book.png"
+                            alt="book" />
+                        <p class="sboxp">Good to Great</p>
+                    </div>
+
+                    <div class="sboxb">
+                        <img width="20" height="20" src="https://img.icons8.com/parakeet-line/20/4D4D4D/book.png"
+                            alt="book" />
+                        <p class="sboxp">The Avatar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <section class="accounts">
             <a href="/signin/signin.html">
@@ -124,19 +169,10 @@
                 </div>
 
                 <div class="books">
-                    <div class="book" id="openModalBtn">
+                    <div class="book">
                         <img class="fav" src="/icons/admin (4).png" alt="fav">
                         <img class="book1" src="/books/trending.jpg" alt="book">
                         <p>Funny Story</p>
-                    </div>
-
-                    <!-- The Modal -->
-                    <div id="myModal" class="modal">
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <p>Hello, I am a popup modal!</p>
-                        </div>
                     </div>
 
                     <div class="book">
@@ -395,6 +431,17 @@
                     </div>
 
                 </section>
+            </section>
+
+            <!-- add new a new book -->
+            <section class="add-book">
+                <div class="addb">
+
+                </div>
+
+                <div class="refresh">
+
+                </div>
             </section>
 
         </section>

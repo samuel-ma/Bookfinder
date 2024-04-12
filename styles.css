@@ -54,7 +54,7 @@ nav {
     width: 35%;
     border-radius: 5px;
     gap: 10px;
-    outline: 1px solid #3155f43d;
+    outline: 1px solid #cccccc7a;
 }
 
 .searchi {
@@ -405,20 +405,20 @@ p {
     z-index: 100;
     left: 0;
     top: 0;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
 }
 
 /* Modal content */
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* Center modal on screen */
-    padding: 20px;
+    margin: 10% auto; /* Center modal on screen */
+    border-radius: 8px;
     border: 1px solid #888;
-    width: 80%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 40%;
 }
 
 /* Close button */
@@ -434,4 +434,51 @@ p {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+.sbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border-bottom: 1px solid #cccccc7a;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.sbox2 {
+    padding: 20px;
+}
+
+.sboxi {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-family: "Inter";
+}
+
+.sboxb {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    gap: 10px;
+}
+
+.sboxb:hover {
+    background-color: #eee;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sboxh {
+    margin: 0;
+    padding: 0;
+}
+
+.sboxp {
+    margin: 0;
+    padding: 0;
 }
