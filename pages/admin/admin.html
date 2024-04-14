@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <title>Book Finder</title>
+</head>
+
+<body>
+
+    <!-- The navigation bar -->
+    <nav>
+
+        <a href="/index.html">
+            <section class="logo">
+                <h1 class="logoh">Book Finder</h1>
+                <img class="gif" src="/icons/search.gif" alt="gif">
+            </section>
+        </a>
+
+        <section class="search" id="openModalBtn">
+            <input class="searchi" type="text" placeholder="Author, Category or Title...">
+            <img class="searchimg" width="24" height="24"
+                src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/24/4D4D4D/external-search-twitter-flatart-icons-outline-flatarticons.png"
+                alt="external-search-twitter-flatart-icons-outline-flatarticons" />
+        </section>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="sbox">
+                    <img class="searchimg" width="24" height="24"
+                        src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/24/4D4D4D/external-search-twitter-flatart-icons-outline-flatarticons.png"
+                        alt="external-search-twitter-flatart-icons-outline-flatarticons" />
+
+                    <input class="sboxi" type="text" placeholder="Search what your looking for...">
+
+                    <img class="close" width="20" height="20"
+                        src="https://img.icons8.com/ios/24/4D4D4D/delete-sign--v1.png" alt="delete-sign--v1" />
+                </div>
+
+                <div class="sbox2">
+                    <p class="sboxh">Recent Search...</p>
+
+                    <div class="sboxb">
+                        <img width="20" height="20" src="https://img.icons8.com/parakeet-line/20/4D4D4D/book.png"
+                            alt="book" />
+                        <p class="sboxp">The Hunter</p>
+                    </div>
+
+                    <div class="sboxb">
+                        <img width="20" height="20" src="https://img.icons8.com/parakeet-line/20/4D4D4D/book.png"
+                            alt="book" />
+                        <p class="sboxp">Fifty Shades of Grey</p>
+                    </div>
+
+                    <div class="sboxb">
+                        <img width="20" height="20" src="https://img.icons8.com/parakeet-line/20/4D4D4D/book.png"
+                            alt="book" />
+                        <p class="sboxp">Ends with Us</p>
+                    </div>
+
+                    <div class="sboxb">
+                        <img width="20" height="20" src="https://img.icons8.com/parakeet-line/20/4D4D4D/book.png"
+                            alt="book" />
+                        <p class="sboxp">Good to Great</p>
+                    </div>
+
+                    <div class="sboxb">
+                        <img width="20" height="20" src="https://img.icons8.com/parakeet-line/20/4D4D4D/book.png"
+                            alt="book" />
+                        <p class="sboxp">The Avatar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="user">
+            <img width="24" height="24" src="https://img.icons8.com/ios-glyphs/24/1A1A1A/user--v1.png" alt="user--v1" />
+        </section>
+
+    </nav>
+
+    <!-- The main section -->
+    <main>
+        <section class="leftbar">
+            <div class="two">
+                <a href="/pages/admin/admin.html">
+                    <div class="high">
+                        <div>
+                            <img width="24" height="24" src="https://img.icons8.com/ios-glyphs/24/3155f4/repository.png"
+                                alt="repository" />
+                        </div>
+                        <p class="home highh">Dashboard</p>
+                    </div>
+                </a>
+
+                <a href="/index.html">
+                    <div class="icon">
+                        <div>
+                            <!-- <img width="24" height="24"
+                                src="https://img.icons8.com/ios-glyphs/24/equal-housing-opportunity.png"
+                                alt="equal-housing-opportunity" /> -->
+                            <img width="24" height="24"
+                                src="https://img.icons8.com/ios-glyphs/24/000000/smart-home-checked.png"
+                                alt="smart-home-checked" />
+                        </div>
+                        <p class="home">Explore</p>
+                    </div>
+                </a>
+
+                <a href="/categories/cat.html">
+                    <div class="icon">
+                        <div>
+                            <img width="24" height="24" src="https://img.icons8.com/ios-glyphs/30/box-search-1.png"
+                                alt="box-search-1" />
+                        </div>
+                        <p class="home">Categories</p>
+                    </div>
+                </a>
+
+                <div class="icon">
+                    <div>
+                        <img width="24" height="24" src="https://img.icons8.com/ios-glyphs/30/borrow-book.png"
+                            alt="borrow-book" />
+                    </div>
+                    <p class="home">Borrowed</p>
+                </div>
+
+                <div class="icon">
+                    <div>
+                        <img width="24" height="24" src="https://img.icons8.com/ios-glyphs/24/rating.png"
+                            alt="rating" />
+                    </div>
+                    <p class="home">Favorites</p>
+                </div>
+
+                <div class="icon">
+                    <div>
+                        <img width="24" height="24" src="https://img.icons8.com/ios-glyphs/24/online-shop-favorite.png"
+                            alt="online-shop-favorite" />
+                    </div>
+                    <p class="home">Shop</p>
+                </div>
+
+            </div>
+
+            <div class="two">
+                <div class="icon">
+                    <div>
+                        <img width="24" height="24" src="https://img.icons8.com/ios-glyphs/24/info--v1.png"
+                            alt="info--v1" />
+                    </div>
+                    <p class="home">Info...</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="rightbar">
+            <div>
+                <h1>Dashboard</h1>
+
+                <section class="alldash">
+                    <div class="alldash1">
+                        <div class="alldash2">
+                            <p>Active Now</p>
+                            <img width="24" height="24" src="https://img.icons8.com/android/24/1A1A1A/pie-chart.png"
+                                alt="pie-chart" />
+                        </div>
+
+                        <div class="alldash3">
+                            <h1>+573</h1>
+                            <p>+201 since last hour</p>
+                        </div>
+                    </div>
+
+                    <div class="alldash1">
+                        <div class="alldash2">
+                            <p>Active Now</p>
+                            <img width="24" height="24" src="https://img.icons8.com/android/24/1A1A1A/pie-chart.png"
+                                alt="pie-chart" />
+                        </div>
+
+                        <div class="alldash3">
+                            <h1>+573</h1>
+                            <p>+201 since last hour</p>
+                        </div>
+                    </div>
+
+                    <div class="alldash1">
+                        <div class="alldash2">
+                            <p>Active Now</p>
+                            <img width="24" height="24" src="https://img.icons8.com/android/24/1A1A1A/pie-chart.png"
+                                alt="pie-chart" />
+                        </div>
+
+                        <div class="alldash3">
+                            <h1>+573</h1>
+                            <p>+201 since last hour</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="allitems">
+                    <div class="item-intro">
+                        <h1>Welcome back</h1>
+                        <p>Here's a list of all your tasks this month!</p>
+                    </div>
+
+                    <div>
+                        <div class="filter-div">
+                            <input type="text" placeholder="Filter search...">
+                            <div class="filter">
+                                <img width="20" height="20"
+                                    src="https://img.icons8.com/ios-glyphs/24/1A1A1A/sorting-options.png"
+                                    alt="sorting-options" />
+                                <p>Filter</p>
+                            </div>
+                        </div>
+
+                        <div class="items">
+                            <div class="item-header">
+                                <p>Books</p>
+                                <p>Image</p>
+                                <p>Title</p>
+                                <p>Author</p>
+                                <p>Year</p>
+                                <p>Category</p>
+                            </div>
+
+                            <div class="item-list">
+                                <div class="item">
+                                    <p>01</p>
+                                    <div class="itemi">
+                                        <input placeholder="Choose file" type="file">
+                                    </div>
+                                    <p>Think Again</p>
+                                    <p>Adam Grant</p>
+                                    <p>2017</p>
+                                    <div class="catdot">
+                                        <p>Science</p>
+                                        <p class="dot">···</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <p>01</p>
+                                    <div class="itemi">
+                                        <input placeholder="Choose file" type="file">
+                                    </div>
+                                    <p>Think Again</p>
+                                    <p>Adam Grant</p>
+                                    <p>2017</p>
+                                    <div class="catdot">
+                                        <p>Science</p>
+                                        <p class="dot">···</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <p>01</p>
+                                    <div class="itemi">
+                                        <input placeholder="Choose file" type="file">
+                                    </div>
+                                    <p>Think Again</p>
+                                    <p>Adam Grant</p>
+                                    <p>2017</p>
+                                    <div class="catdot">
+                                        <p>Science</p>
+                                        <p class="dot">···</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <p>01</p>
+                                    <div class="itemi">
+                                        <input placeholder="Choose file" type="file">
+                                    </div>
+                                    <p>Think Again</p>
+                                    <p>Adam Grant</p>
+                                    <p>2017</p>
+                                    <div class="catdot">
+                                        <p>Science</p>
+                                        <p class="dot">···</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <p>01</p>
+                                    <div class="itemi">
+                                        <input placeholder="Choose file" type="file">
+                                    </div>
+                                    <p>Think Again</p>
+                                    <p>Adam Grant</p>
+                                    <p>2017</p>
+                                    <div class="catdot">
+                                        <p>Science</p>
+                                        <p class="dot">···</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <p>01</p>
+                                    <div class="itemi">
+                                        <input placeholder="Choose file" type="file">
+                                    </div>
+                                    <p>Think Again</p>
+                                    <p>Adam Grant</p>
+                                    <p>2017</p>
+                                    <div class="catdot">
+                                        <p>Science</p>
+                                        <p class="dot">···</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <p>01</p>
+                                    <div class="itemi">
+                                        <input placeholder="Choose file" type="file">
+                                    </div>
+                                    <p>Think Again</p>
+                                    <p>Adam Grant</p>
+                                    <p>2017</p>
+                                    <div class="catdot">
+                                        <p>Science</p>
+                                        <p class="dot">···</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <p>01</p>
+                                    <div class="itemi">
+                                        <input placeholder="Choose file" type="file">
+                                    </div>
+                                    <p>Think Again</p>
+                                    <p>Adam Grant</p>
+                                    <p>2017</p>
+                                    <div class="catdot">
+                                        <p>Science</p>
+                                        <p class="dot">···</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="admin.js"></script>
+
+</body>
+
+</html>
