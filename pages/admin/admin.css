@@ -96,11 +96,53 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #cccccc7a;
     width: 15px;
     height: 15px;
     padding: 10px;
     border-radius: 20px;
+}
+
+/* Style the dropdown button */
+.dropbtn {
+    border: 1px solid #cccccc7a;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Dropdown container (hidden by default) */
+.dropdown-content {
+    font-family: "Inter";
+    font-size: smaller;
+    display: none;
+    position: absolute;
+    right: 10px;
+    background-color: white;
+    border: 1px solid #cccccc7a;
+    border-radius: 10px;
+    min-width: 160px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: grey;
+    font-size: smaller;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #cccccc46;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .leftbar {
@@ -164,7 +206,7 @@ p {
 .rightbar {
     padding-top: 60px;
     padding-left: 250px;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
     padding-right: 20px;
 }
 
@@ -355,7 +397,7 @@ p {
 .modal-content {
     background-color: #fefefe;
     margin: 10% auto; /* Center modal on screen */
-    border-radius: 8px;
+    border-radius: 10px;
     border: 1px solid #888;
     width: 40%;
 }
