@@ -507,6 +507,10 @@ p {
     background-color: #3155f4;
 }
 
+.addb:hover {
+    background-color: #3155f4ce;
+}
+
 .refresh {
     cursor: pointer;
     padding: 10px;
