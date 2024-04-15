@@ -151,6 +151,10 @@ p {
     background-color: blue;
 }
 
+.signup:hover {
+    background-color: #3155f4ce;
+}
+
 .leftbar {
     background-color: white;
     display: flex;
