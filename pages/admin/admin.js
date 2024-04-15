@@ -22,6 +22,24 @@ function toggleDropdown() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
+// Get the dot element
+const dot = document.querySelector(".dot");
+// Get the dropdown menu
+const dropdown = document.querySelector(".dropdown2");
+
+// Toggle dropdown visibility when dot is clicked
+dot.addEventListener("click", function () {
+    dropdown.style.display =
+        dropdown.style.display === "block" ? "none" : "block";
+});
+
+// Close dropdown when user clicks outside of it
+document.addEventListener("click", function (event) {
+    if (!dropdown.contains(event.target) && !dot.contains(event.target)) {
+        dropdown.style.display = "none";
+    }
+});
+
 // Close the dropdown if the user clicks outside of it
 window.onclick = function (event) {
     if (!event.target.matches(".dropbtn") && event.target == modal) {
