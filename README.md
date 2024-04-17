@@ -11,37 +11,22 @@ Online library website helps the users to view and search for books to borrow.
 ![Nodemon](https://img.shields.io/badge/NODEMON-%23323330.svg?style=for-the-badge&logo=nodemon&logoColor=%BBDEAD) 
 ![Terminal](https://img.shields.io/badge/Windows%20Terminal-%234D4D4D.svg?style=for-the-badge&logo=windows-terminal&logoColor=white) 
 
-## Getting Started
+## Installing
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
+A step by step series of examples that tell you how to get a development env running
 
 ```
-// follow these steps
-
 1. IDE of your choice (VS Code would be preferred)
 
 2. Download the latest version of Node on your device
 
 3. Browser to run and view the project
 
-```
+4. Just download the live server extention if your using VS Code
 
-### Installing
+5. Right click on your index.html file and click on Open With Live Server
 
-A step by step series of examples that tell you how to get a development env running
-
-```
-// follow these steps
-
-1. Just download the live server extention if your using VS Code
-
-2. Right click on your index.html file and click on Open With Live Server
-
-3. That will launch the project on your preferred browser
+6. That will launch the project on your preferred browser
 ```
 
 ## FEATURES
