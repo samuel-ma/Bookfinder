@@ -23,3 +23,20 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 };
+
+// reset the screen everytime the refresh button is clicked
+const resetBtn = document.getElementById("reset");
+
+resetBtn.addEventListener("click", function () {
+    location.reload();
+});
+
+// Function to scroll the page to the top
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+}
+
+document.querySelector(".addb").addEventListener("click", scrollToTop);
