@@ -44,16 +44,6 @@ A step by step series of examples that tell you how to get a development env run
 3. That will launch the project on your preferred browser
 ```
 
-## Running the tests
-
-Currently not in the testing phase...
-
-## Built With
-
-* [HTML](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [CSS](https://maven.apache.org/) - Dependency Management
-* [JAVASCRIPT](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
 ## FEATURES
 
 ```
