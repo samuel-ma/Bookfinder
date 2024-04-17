@@ -55,7 +55,7 @@ logged in user.
 
 ## ☕ Contributing
 
-Open the issues and contribute to any of the issues that are unresolved, thanks again in advance
+Open the ![issues](https://github.com/samuel-ma/Bookfinder/issues)  and contribute to any of the issues that are unresolved, thanks again in advance
 
 ## ☕ License
 
