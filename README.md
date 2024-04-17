@@ -13,20 +13,17 @@ Online library website helps the users to view and search for books to borrow.
 
 ## Installing
 
-A step by step series of examples that tell you how to get a development env running
+* IDE of your choice (VS Code would be preferred)
 
+* Download the latest version of Node on your device
 
-  1. IDE of your choice (VS Code would be preferred)
+* Browser to run and view the project
 
-  2. Download the latest version of Node on your device
+* Just download the live server extention if your using VS Code
 
-  3. Browser to run and view the project
+* Right click on your index.html file and click on Open With Live Server
 
-  4. Just download the live server extention if your using VS Code
-
-  5. Right click on your index.html file and click on Open With Live Server
-
-  6. That will launch the project on your preferred browser
+* That will launch the project on your preferred browser
 
 ## FEATURES
 
