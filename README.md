@@ -88,10 +88,6 @@ logged in user.
 
 Open the issues and contribute to any of the issues that are unresolved, thanks again in advance
 
-## Authors
-
-* **Samuel Majok**
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
