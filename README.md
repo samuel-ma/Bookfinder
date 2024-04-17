@@ -28,10 +28,7 @@ Online library website helps the users to view and search for books to borrow.
 ## FEATURES
 
 ```
-// Here's a short list of features to start
-
-The website should have 2 types of users: either an admin or a
-user.
+The website should have 2 types of users: either an admin or a user.
 
 Each can sign up and choose whether to be an admin or user.
 ```
