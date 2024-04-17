@@ -46,14 +46,14 @@ available in case it is borrowed by a user.
 * Borrow a book (only applicable in case a book is available).
 * View list of borrowed books for that user.
 
-## 🥽 Extra details...
+## ☕ Extra details...
 
 * Online library website should have a navigation bar.
 * The navigation bar should be adjusted dynamically based on the
 logged in user.
 * The navigation bar should be accessible from all web pages
 
-## 🎨 Contributing
+## ☕ Contributing
 
 Open the issues and contribute to any of the issues that are unresolved, thanks again in advance
 
@@ -61,13 +61,13 @@ Open the issues and contribute to any of the issues that are unresolved, thanks 
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## ☘ Acknowledgments
+## 🎨 Acknowledgments
 
 * Contributors will be added to readme page, thanks in advance...
 * Inspiration
 
 
-## 🍒 Hosted on:
+## 🎨 Hosted on:
 ![GithubPages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white) 
 ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) 
 
