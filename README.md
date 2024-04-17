@@ -25,14 +25,6 @@ Online library website helps the users to view and search for books to borrow.
 
 * That will launch the project on your preferred browser
 
-## FEATURES
-
-```
-The website should have 2 types of users: either an admin or a user.
-
-Each can sign up and choose whether to be an admin or user.
-```
-
 ## Admins can do the following...
 * Sign up (fill in form “username, password, confirm password,
 email and is_admin”)
