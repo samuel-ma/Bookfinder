@@ -86,11 +86,11 @@ logged in user.
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Open the issues and contribute to any of the issues that are unresolved, thanks again in advance
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Samuel Majok**
 
 ## License
 
