@@ -11,6 +11,8 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
+// follow these steps
+
 1. IDE of your choice (VS Code would be preferred)
 
 2. Download the latest version of Node on your device
@@ -24,8 +26,12 @@ What things you need to install the software and how to install them
 A step by step series of examples that tell you how to get a development env running
 
 ```
+// follow these steps
+
 1. Just download the live server extention if your using VS Code
+
 2. Right click on your index.html file and click on Open With Live Server
+
 3. That will launch the project on your preferred browser
 ```
 
@@ -45,7 +51,9 @@ Currently not in the testing phase...
 // Here's a short list of features to start
 
 The website should have 2 types of users: either an admin or a
-user. Each can sign up and choose whether to be an admin or user.
+user.
+
+Each can sign up and choose whether to be an admin or user.
 ```
 
 ## Admins can do the following...
