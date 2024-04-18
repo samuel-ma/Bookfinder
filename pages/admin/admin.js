@@ -229,3 +229,40 @@ document.querySelector(".searchi").addEventListener("input", (e) => {
     const query = e.target.value.trim();
     performSearch(query);
 });
+
+// Search input on the right side bar with all the items
+let searchHistory = [];
+
+function liveSearch() {
+    const input = document.getElementById("searchInput").value.toLowerCase();
+    const searchResultsDiv = document.getElementById("searchResults");
+    searchResultsDiv.innerHTML = ""; // Clear previous results
+
+    // Filter and add matching items
+    const items = document.querySelectorAll(".item");
+    items.forEach((item) => {
+        const title = item
+            .querySelector("p:nth-of-type(3)")
+            .textContent.toLowerCase();
+        if (title.includes(input)) {
+            searchResultsDiv.appendChild(item.cloneNode(true));
+        }
+    });
+
+    // Add the latest search item to the top of the list
+    if (input.trim() !== "") {
+        searchHistory.unshift(input);
+    }
+
+    // Remove duplicate items
+    const uniqueResults = Array.from(new Set(searchHistory));
+
+    // Display search results
+    uniqueResults.forEach((item) => {
+        if (item.includes(input)) {
+            const li = document.createElement("li");
+            li.textContent = item;
+            searchResultsDiv.appendChild(li);
+        }
+    });
+}

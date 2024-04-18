@@ -4,13 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css" />
     <title>Search Array of Objects</title>
 </head>
 
 <body>
-    <input type="text" id="searchInput" placeholder="Enter search term">
-    <button onclick="searchBooks()">Search</button>
-    <ul id="results"></ul>
+    <main>
+        <section>
+            <div>
+                <input type="text" id="searchInput" placeholder="Enter search term">
+                <button onclick="searchBooks()">Search</button>
+            </div>
+            <ul id="results"></ul>
+        </section>
+    </main>
 
     <script>
         const booksArray = [

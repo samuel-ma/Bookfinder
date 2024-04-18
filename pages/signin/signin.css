@@ -2,6 +2,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
+:root {
+    --black: #000;
+    --white: #fff;
+    --grey: grey;
+    --bg: rgba(255, 255, 255, 0.8);
+    --bg2: rgba(0, 0, 0, 0.8);
+    --border: #cccccc7a;
+    --blue: #3155f4;
+}
+
 body {
     font-family: "Inter";
     margin: 0px;
@@ -9,11 +19,11 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #3155f4;
+    background-color: var(--blue);
 }
 
 main {
-    background-color: white;
+    background-color: var(--white);
     padding: 3%;
     border-radius: 10px;
     display: flex;
@@ -39,12 +49,12 @@ h6 {
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--white);
 }
 
 p {
     padding: 10px;
-    color: grey;
+    color: var(--grey);
     font-size: smaller;
     line-height: 28px;
 }
@@ -85,7 +95,7 @@ button {
     padding-left: 20px;
     padding-right: 20px;
     border: none;
-    color: white;
+    color: var(--white);
     border-radius: 5px;
     background-color: rgb(78, 78, 211);
 }
@@ -96,5 +106,5 @@ button:active {
 
 .asignup {
     text-decoration: underline;
-    color: #3155f4;
+    color: var(--blue);
 }

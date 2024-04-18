@@ -1,0 +1,73 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --grey: grey;
+    --bg: rgba(255, 255, 255, 0.8);
+    --bg2: rgba(0, 0, 0, 0.8);
+    --border: #cccccc7a;
+    --blue: #3155f4;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div {
+    padding: 20px;
+    display: flex;
+    width: 80%;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    font-family: "Poppins";
+    width: 100%;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+}
+
+button {
+    cursor: pointer;
+    font-family: "Poppins";
+    padding-left: 20px;
+    padding-right: 20px;
+    padding: 10px;
+    width: 20%;
+    color: var(--white);
+    border-radius: 5px;
+    border: none;
+    background-color: var(--blue);
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+li {
+    width: 50%;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    list-style: none;
+    border: 1px solid var(--grey);
+    padding: 10px;
+    color: grey;
+    transition: ease-in-out 0.5s;
+}
+
+li:hover {
+    cursor: pointer;
+    width: 60%;
+}

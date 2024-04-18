@@ -2,6 +2,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
+:root {
+    --black: #000;
+    --white: #fff;
+    --grey: grey;
+    --bg: rgba(255, 255, 255, 0.8);
+    --bg2: rgba(0, 0, 0, 0.8);
+    --border: #cccccc7a;
+    --blue: #3155f4;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -11,13 +21,13 @@ body {
 nav {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    background-color: rgb(255, 255, 255, 0.8);
+    background-color: var(--bg);
     display: flex;
     padding-left: 2%;
     padding-right: 2%;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #cccccc7a;
+    border-bottom: 1px solid var(--border);
     position: fixed;
     left: 0;
     right: 0;
@@ -33,7 +43,7 @@ nav {
 }
 
 .logoh {
-    color: black;
+    color: var(--black);
 }
 
 .gif {
@@ -54,7 +64,7 @@ nav {
     width: 35%;
     border-radius: 5px;
     gap: 10px;
-    outline: 1px solid #cccccc7a;
+    outline: 1px solid var(--border);
 }
 
 .searchi {
@@ -62,7 +72,7 @@ nav {
     width: 100%;
     border: none;
     outline: none;
-    border-right: 1px solid #cccccc7a;
+    border-right: 1px solid var(--border);
     background-color: transparent;
 }
 
@@ -113,12 +123,12 @@ h6 {
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--white);
 }
 
 p {
     padding: 10px;
-    color: grey;
+    color: var(--grey);
     font-size: smaller;
     line-height: 28px;
 }
@@ -129,18 +139,18 @@ p {
     padding-right: 20px;
     border: none;
     border-radius: 5px;
-    background-color: grey;
+    background-color: var(--grey);
     cursor: pointer;
 }
 
 .signup {
-    background-color: #3155f4;
+    background-color: var(--blue);
     color: white;
 }
 
 .signin {
     background-color: #f0f6ff;
-    color: #3155f4;
+    color: var(--blue);
 }
 
 .signin:hover {
@@ -156,7 +166,7 @@ p {
 }
 
 .leftbar {
-    background-color: white;
+    background-color: var(--white);
     display: flex;
     align-items: start;
     justify-content: space-between;
@@ -168,7 +178,7 @@ p {
     left: 0;
     right: 0;
     width: 200px;
-    border-right: 1px solid #cccccc7a;
+    border-right: 1px solid var(--border);
     z-index: 10;
 }
 
@@ -201,11 +211,11 @@ p {
     padding-left: 10%;
     width: 100%;
     background-color: #c7e0ff;
-    color: white;
+    color: var(--white);
 }
 
 .highh {
-    color: #3155f4;
+    color: var(--blue);
 }
 
 .img {
@@ -232,12 +242,12 @@ p {
     padding: 0;
     font-size: 28px;
     font-weight: 900;
-    color: #3155f4;
+    color: var(--blue);
 }
 
 .featuredp {
     margin: 0;
-    color: #3155f4;
+    color: var(--blue);
 }
 
 .featureda {
@@ -245,7 +255,7 @@ p {
     padding: 0;
     margin-bottom: 30px;
     border-bottom: 1px solid #3155f43d;
-    color: #3155f4;
+    color: var(--blue);
 }
 
 .banner {
@@ -255,7 +265,7 @@ p {
 .banner p {
     margin: 0;
     padding: 0;
-    color: white;
+    color: var(--white);
 }
 
 .banner h1 {
@@ -274,7 +284,7 @@ p {
 }
 
 .bannertext {
-    color: white;
+    color: var(--white);
     width: 100%;
     position: absolute;
     top: 70px;
@@ -311,7 +321,7 @@ p {
 .book p {
     margin: 0;
     padding: 0;
-    color: #3155f4;
+    color: var(--blue);
 }
 
 .book1 {
@@ -347,7 +357,7 @@ p {
 }
 
 .trendb {
-    border: 1px solid #cccccc7a;
+    border: 1px solid var(--border);
     border-radius: 5px;
     cursor: pointer;
     font-size: smaller;
@@ -356,7 +366,7 @@ p {
 }
 
 .trendb:hover {
-    color: #3155f4;
+    color: var(--blue);
     border: 1px solid #3155f43d;
 }
 
@@ -366,7 +376,7 @@ p {
 }
 
 .trendb p:hover {
-    color: #3155f4;
+    color: var(--blue);
 }
 
 .trendingb {
@@ -413,7 +423,7 @@ p {
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+    background-color: var(--bg2); /* Black background with opacity */
 }
 
 /* Modal content */
@@ -435,7 +445,7 @@ p {
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: var(--black);
     text-decoration: none;
     cursor: pointer;
 }
@@ -445,7 +455,7 @@ p {
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    border-bottom: 1px solid #cccccc7a;
+    border-bottom: 1px solid var(--border);
     padding: 20px;
     padding-bottom: 10px;
 }
@@ -508,7 +518,7 @@ p {
     align-items: center;
     justify-content: center;
     border-radius: 20px;
-    background-color: #3155f4;
+    background-color: var(--blue);
 }
 
 .addb:hover {
@@ -524,5 +534,5 @@ p {
     align-items: center;
     justify-content: center;
     border-radius: 20px;
-    background-color: #cccccc7a;
+    background-color: var(--border);
 }
