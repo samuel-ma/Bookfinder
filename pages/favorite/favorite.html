@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="favorite.css">
     <title>Book Finder</title>
 </head>
 
@@ -112,39 +112,46 @@
                     </div>
                 </a>
 
-                <a href="/categories/cat.html">
-                    <div class="high">
+                <a href="/pages/categories/cat.html">
+                    <div class="icon">
                         <div>
-                            <img width="24" height="24"
-                                src="https://img.icons8.com/ios-glyphs/24/3155f4/box-search-1.png" alt="box-search-1" />
+                            <img width="24" height="24" src="https://img.icons8.com/ios-glyphs/24/box-search-1.png"
+                                alt="box-search-1" />
                         </div>
-                        <p class="home highh">Categories</p>
+                        <p class="home">Categories</p>
                     </div>
                 </a>
 
-                <div class="icon">
-                    <div>
-                        <img width="24" height="24" src="https://img.icons8.com/ios-glyphs/30/borrow-book.png"
-                            alt="borrow-book" />
+                <a href="/pages/borrowed/borrowed.html">
+                    <div class="icon">
+                        <div>
+                            <img width="24" height="24" src="https://img.icons8.com/ios-glyphs/30/borrow-book.png"
+                                alt="borrow-book" />
+                        </div>
+                        <p class="home">Borrowed</p>
                     </div>
-                    <p class="home">Borrowed</p>
-                </div>
+                </a>
 
-                <div class="icon">
-                    <div>
-                        <img width="24" height="24" src="https://img.icons8.com/ios-glyphs/24/rating.png"
-                            alt="rating" />
+                <a href="/pages/favorite/favorite.html">
+                    <div class="high">
+                        <div>
+                            <img width="24" height="24" src="https://img.icons8.com/ios-glyphs/24/3155f4/rating.png"
+                                alt="rating" />
+                        </div>
+                        <p class="home highh">Favorites</p>
                     </div>
-                    <p class="home">Favorites</p>
-                </div>
+                </a>
 
-                <div class="icon">
-                    <div>
-                        <img width="24" height="24" src="https://img.icons8.com/ios-glyphs/24/online-shop-favorite.png"
-                            alt="online-shop-favorite" />
+                <a href="/pages/shop/shop.html">
+                    <div class="icon">
+                        <div>
+                            <img width="24" height="24"
+                                src="https://img.icons8.com/ios-glyphs/24/online-shop-favorite.png"
+                                alt="online-shop-favorite" />
+                        </div>
+                        <p class="home">Shop</p>
                     </div>
-                    <p class="home">Shop</p>
-                </div>
+                </a>
 
             </div>
 
@@ -160,55 +167,11 @@
         </section>
 
         <section class="rightbar">
-            <section class="catcard">
-                Explore, Engage, Enjoy
-            </section>
-
-            <section class="allbooks">
-                <div class="allbc">
-                    <h1>Categories</h1>
-                    <p>Minor details about it</p>
-                </div>
-
-                <div class="allbc">
-                    <h1>Categories</h1>
-                    <p>Minor details about it</p>
-                </div>
-
-                <div class="allbc">
-                    <h1>Categories</h1>
-                    <p>Minor details about it</p>
-                </div>
-
-                <div class="allbc">
-                    <h1>Categories</h1>
-                    <p>Minor details about it</p>
-                </div>
-
-                <div class="allbc">
-                    <h1>Categories</h1>
-                    <p>Minor details about it</p>
-                </div>
-            </section>
-
-            <section class="container">
-                <div class="contd">
-                    <select id="categoryFilter">
-                        <option value="">All Categories</option>
-                        <option value="Comedy">Comedy</option>
-                        <option value="Adventure">Adventure</option>
-                        <option value="Business">Business</option>
-                        <option value="Action">Action</option>
-                    </select>
-                    <input class="inputt" type="text" id="searchInput" placeholder="Search by title...">
-                </div>
-                <div id="booksList" class="books-list"></div>
-            </section>
         </section>
 
     </main>
 
-    <script src="search.js"></script>
+    <script src="favorite.js"></script>
 
 </body>
 
