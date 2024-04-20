@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cat.css">
+    <link rel="stylesheet" href="search.css">
     <title>Book Finder</title>
 </head>
 
@@ -160,77 +160,55 @@
         </section>
 
         <section class="rightbar">
-            <div>
-                <h1>Categories...</h1>
+            <section class="catcard">
+                Explore, Engage, Enjoy
+            </section>
 
-                <div class="categories">
-                    <a href="/pages/categories/search/search.html" class="category">
-                        <img class="icat" src="/images/a (1).jpg" alt="category">
-                        <p class="pcat">Sports</p>
-                    </a>
-
-                    <a href="/pages/categories/search/search.html" class="category">
-                        <img class="icat" src="/images/a (2).jpg" alt="category">
-                        <p class="pcat">Kids</p>
-                    </a>
-
-                    <a href="/pages/categories/search/search.html" class="category">
-                        <img class="icat" src="/images/a (3).jpg" alt="category">
-                        <p class="pcat">Mystery</p>
-                    </a>
-
-                    <a href="/pages/categories/search/search.html" class="category">
-                        <img class="icat" src="/images/a (4).jpg" alt="category">
-                        <p class="pcat">Love</p>
-                    </a>
-
-                    <a href="/pages/categories/search/search.html" class="category">
-                        <img class="icat" src="/images/a (5).jpg" alt="category">
-                        <p class="pcat">Romance</p>
-                    </a>
-
-                    <a href="/pages/categories/search/search.html" class="category">
-                        <img class="icat" src="/images/a (6).jpg" alt="category">
-                        <p class="pcat">Fantasy</p>
-                    </a>
-
-                    <a href="/pages/categories/search/search.html" class="category">
-                        <img class="icat" src="/images/a (7).jpg" alt="category">
-                        <p class="pcat">Science</p>
-                    </a>
-
-                    <a href="/pages/categories/search/search.html" class="category">
-                        <img class="icat" src="/images/a (8).jpg" alt="category">
-                        <p class="pcat">Recipes</p>
-                    </a>
-
-                    <a href="/pages/categories/search/search.html" class="category">
-                        <img class="icat" src="/images/a (5).png" alt="category">
-                        <p class="pcat">Art</p>
-                    </a>
-
-                    <a href="/pages/categories/search/search.html" class="category">
-                        <img class="icat" src="/images/a (2).png" alt="category">
-                        <p class="pcat">History</p>
-                    </a>
-
-                    <a href="/pages/categories/search/search.html" class="category">
-                        <img class="icat" src="/images/a (3).png" alt="category">
-                        <p class="pcat">Fiction</p>
-                    </a>
-
-                    <a href="/pages/categories/search/search.html" class="category">
-                        <img class="icat" src="/images/a (4).png" alt="category">
-                        <p class="pcat">Action</p>
-                    </a>
-
+            <section class="allbooks">
+                <div class="allbc">
+                    <h1>Categories</h1>
+                    <p>Minor details about it</p>
                 </div>
-            </div>
+
+                <div class="allbc">
+                    <h1>Categories</h1>
+                    <p>Minor details about it</p>
+                </div>
+
+                <div class="allbc">
+                    <h1>Categories</h1>
+                    <p>Minor details about it</p>
+                </div>
+
+                <div class="allbc">
+                    <h1>Categories</h1>
+                    <p>Minor details about it</p>
+                </div>
+
+                <div class="allbc">
+                    <h1>Categories</h1>
+                    <p>Minor details about it</p>
+                </div>
+            </section>
+
+            <section class="container">
+                <div class="contd">
+                    <select id="categoryFilter">
+                        <option value="">All Categories</option>
+                        <option value="Comedy">Comedy</option>
+                        <option value="Adventure">Adventure</option>
+                        <option value="Business">Business</option>
+                        <option value="Action">Action</option>
+                    </select>
+                    <input class="inputt" type="text" id="searchInput" placeholder="Search by title...">
+                </div>
+                <div id="booksList" class="books-list"></div>
+            </section>
         </section>
 
     </main>
 
-    <script src="cat.js"></script>
+    <script src="search.js"></script>
 
 </body>
 
