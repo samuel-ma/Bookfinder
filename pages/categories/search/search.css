@@ -194,7 +194,6 @@ a {
 p {
     color: var(--grey);
     font-size: smaller;
-    line-height: 28px;
 }
 
 .sign {
@@ -244,6 +243,7 @@ p {
     width: 200px;
     border-right: 1px solid var(--border);
     z-index: 10;
+    line-height: 28px;
 }
 
 .two {
