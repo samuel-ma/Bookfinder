@@ -56,7 +56,7 @@ window.onclick = function (event) {
 
 // implementing the search functionality
 // Sample book data (can be replaced with actual data from a database or API)
-const books = [
+let books = [
     {
         id: 0,
         title: "Funny Story",
@@ -264,5 +264,89 @@ function liveSearch() {
             li.textContent = item;
             searchResultsDiv.appendChild(li);
         }
+    });
+}
+
+// HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+// HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+// hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+// HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+// HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+// hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+// HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+// HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+// hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+// HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+// HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+// hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+// HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+// HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+// hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+
+// Get the modal
+const modal2 = document.getElementById("myModal2");
+
+// Get the button that opens the modal
+const btn2 = document.getElementById("addBookBtn");
+
+// Get the <span> element that closes the modal
+const span2 = document.getElementsByClassName("close2")[0];
+
+// When the user clicks the button, open the modal
+btn2.onclick = function () {
+    modal2.style.display = "block";
+};
+
+// When the user clicks on <span> (x), close the modal
+span2.onclick = function () {
+    modal2.style.display = "none";
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+    if (event.target == modal2) {
+        modal2.style.display = "none";
+    }
+};
+
+// Form submission logic
+const form = document.getElementById("addBookForm");
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    const formData = new FormData(form);
+    const newBook = {};
+    formData.forEach((value, key) => {
+        newBook[key] = value;
+    });
+
+    addBook(formData); // Add the new book to the books array
+    console.log("Books Array:", books); // Check the updated books array in the console
+    modal2.style.display = "none";
+    form.reset();
+});
+
+// Function to add a new book to the books array
+function addBook(formData) {
+    const newBook = {
+        id: books.length, // Assign a unique ID based on array length
+        title: formData.get("title"),
+        img: formData.get("img"),
+        author: formData.get("author"),
+        date: parseInt(formData.get("date")),
+        category: formData.get("category"),
+        rating: parseFloat(formData.get("rating")),
+    };
+    books.unshift(newBook);
+    updateBookList(); // Update the book list display
+}
+
+// Function to update the book list display
+function updateBookList() {
+    const bookList = document.getElementById("bookList");
+    bookList.innerHTML = ""; // Clear previous list items
+    books.forEach((book) => {
+        const li = document.createElement("li");
+        li.textContent = `${book.title} by ${book.author}`;
+        bookList.appendChild(li);
     });
 }

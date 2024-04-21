@@ -132,29 +132,36 @@
                     </div>
                 </a>
 
-                <div class="icon">
-                    <div>
-                        <img width="24" height="24" src="https://img.icons8.com/ios-glyphs/30/borrow-book.png"
-                            alt="borrow-book" />
+                <a href="/pages/borrowed/borrowed.html">
+                    <div class="icon">
+                        <div>
+                            <img width="24" height="24" src="https://img.icons8.com/ios-glyphs/30/borrow-book.png"
+                                alt="borrow-book" />
+                        </div>
+                        <p class="home">Borrowed</p>
                     </div>
-                    <p class="home">Borrowed</p>
-                </div>
+                </a>
 
-                <div class="icon">
-                    <div>
-                        <img width="24" height="24" src="https://img.icons8.com/ios-glyphs/24/rating.png"
-                            alt="rating" />
+                <a href="/pages/favorite/favorite.html">
+                    <div class="icon">
+                        <div>
+                            <img width="24" height="24" src="https://img.icons8.com/ios-glyphs/24/rating.png"
+                                alt="rating" />
+                        </div>
+                        <p class="home">Favorites</p>
                     </div>
-                    <p class="home">Favorites</p>
-                </div>
+                </a>
 
-                <div class="icon">
-                    <div>
-                        <img width="24" height="24" src="https://img.icons8.com/ios-glyphs/24/online-shop-favorite.png"
-                            alt="online-shop-favorite" />
+                <a href="/pages/shop/shop.html">
+                    <div class="icon">
+                        <div>
+                            <img width="24" height="24"
+                                src="https://img.icons8.com/ios-glyphs/24/online-shop-favorite.png"
+                                alt="online-shop-favorite" />
+                        </div>
+                        <p class="home">Shop</p>
                     </div>
-                    <p class="home">Shop</p>
-                </div>
+                </a>
 
             </div>
 
@@ -232,9 +239,10 @@
 
                             <input type="text" placeholder="Filter search...">
 
-                            <div class="filter2">
+                            <div id="addBookBtn" class="filter2">
                                 <p>Add new</p>
                             </div>
+
                         </div>
 
                         <div class="items">
@@ -586,6 +594,47 @@
                             </div>
                         </div>
                     </div>
+                </section>
+
+                <section>
+
+                    <!-- The Modal -->
+                    <div id="myModal2" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close2">&times;</span>
+                            <form id="addBookForm">
+                                <div class="form-group">
+                                    <label for="title">Title:</label>
+                                    <input type="text" id="title" name="title" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="author">Author:</label>
+                                    <input type="text" id="author" name="author" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="img">Image URL:</label>
+                                    <input type="text" id="img" name="img" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="date">Publication Date:</label>
+                                    <input type="number" id="date" name="date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="category">Category:</label>
+                                    <input type="text" id="category" name="category" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="rating">Rating:</label>
+                                    <input type="number" id="rating" name="rating" step="0.1" min="0" max="5" required>
+                                </div>
+                                <button type="submit">Add Book</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Book List -->
+                    <ul id="bookList"></ul>
                 </section>
             </div>
         </section>
