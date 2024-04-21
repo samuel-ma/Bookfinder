@@ -10,6 +10,7 @@
     --bg2: rgba(0, 0, 0, 0.8);
     --border: #cccccc7a;
     --blue: #3155f4;
+    --purple: rgb(78, 78, 211);
 }
 
 body {
@@ -21,6 +22,27 @@ body {
     justify-content: center;
     width: 100%;
     height: 100vh;
+}
+
+.left {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-gif {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.left p {
+    color: white;
 }
 
 main {
@@ -63,11 +85,17 @@ p {
 }
 
 .form {
+    gap: 10px;
     width: 90%;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.form p {
+    margin: 0;
+    padding: 10px;
 }
 
 .first {
@@ -90,6 +118,26 @@ input {
     flex: 2;
 }
 
+.social-div {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    flex: 1;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.social-div:hover {
+    border: 1px solid var(--purple);
+}
+
+.social-div p {
+    padding: 0;
+    margin: 0;
+}
+
 .socials {
     cursor: pointer;
 }
@@ -103,7 +151,7 @@ button {
     border: none;
     color: var(--white);
     border-radius: 5px;
-    background-color: rgb(78, 78, 211);
+    background-color: var(--purple);
 }
 
 button:active {

@@ -10,6 +10,7 @@
     --bg2: rgba(0, 0, 0, 0.8);
     --border: #cccccc7a;
     --blue: #3155f4;
+    --purple: rgb(78, 78, 211);
 }
 
 body {
@@ -20,6 +21,27 @@ body {
     justify-content: center;
     height: 100vh;
     background-color: var(--blue);
+}
+
+.left {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-gif {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.left p {
+    color: white;
 }
 
 main {
@@ -60,12 +82,17 @@ p {
 }
 
 .form {
+    gap: 10px;
     width: 320px;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+}
+
+.form p {
+    margin: 0;
+    padding: 10px;
 }
 
 .gologin:hover {
@@ -75,6 +102,26 @@ p {
 
 .socials {
     cursor: pointer;
+}
+
+.social-div {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    flex: 1;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.social-div:hover {
+    border: 1px solid var(--purple);
+}
+
+.social-div p {
+    padding: 0;
+    margin: 0;
 }
 
 label {
