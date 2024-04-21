@@ -5,13 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="test.css">
-    <title>Add new</title>
+    <title>Book Management</title>
 </head>
 
 <body>
 
-    <h1>Add New Book</h1>
+    <h1>Book Management</h1>
     <button id="addBookBtn">Add Book</button>
+
+    <!-- Search Input -->
+    <input type="text" id="searchInput" placeholder="Search books by title or author">
+
+    <!-- Book List -->
+    <ul id="bookList"></ul>
 
     <!-- The Modal -->
     <div id="myModal" class="modal">
@@ -47,9 +53,6 @@
             </form>
         </div>
     </div>
-
-    <!-- Book List -->
-    <ul id="bookList"></ul>
 
     <script src="test.js"></script>
 

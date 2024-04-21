@@ -1,61 +1,3 @@
-// Get the modal element
-const modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-const btn = document.getElementById("openModalBtn");
-
-// Get the close button element
-const closeBtn = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal
-btn.onclick = function () {
-    modal.style.display = "block";
-};
-
-// When the user clicks on the close button, close the modal
-closeBtn.onclick = function () {
-    modal.style.display = "none";
-};
-
-// working with the dropdown
-function toggleDropdown() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Get the dot element
-const dot = document.querySelector(".dot");
-// Get the dropdown menu
-const dropdown = document.querySelector(".dropdown2");
-
-// Toggle dropdown visibility when dot is clicked
-dot.addEventListener("click", function () {
-    dropdown.style.display =
-        dropdown.style.display === "block" ? "none" : "block";
-});
-
-// Close dropdown when user clicks outside of it
-document.addEventListener("click", function (event) {
-    if (!dropdown.contains(event.target) && !dot.contains(event.target)) {
-        dropdown.style.display = "none";
-    }
-});
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function (event) {
-    if (!event.target.matches(".dropbtn") && event.target == modal) {
-        modal.style.display = "none";
-        let dropdowns = document.getElementsByClassName("dropdown-content");
-        for (let i = 0; i < dropdowns.length; i++) {
-            let openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains("show")) {
-                openDropdown.classList.remove("show");
-            }
-        }
-    }
-};
-
-// implementing the search functionality
-// Sample book data (can be replaced with actual data from a database or API)
 let books = [
     {
         id: 0,
@@ -177,6 +119,61 @@ let books = [
     },
 ];
 
+const modal = document.getElementById("myModal");
+const btn = document.getElementById("openModalBtn");
+const closeBtn = document.getElementsByClassName("close")[0];
+const booksList = document.getElementById("booksList");
+const searchInput = document.getElementById("searchInput");
+const categoryFilter = document.getElementById("categoryFilter");
+const modal2 = document.getElementById("myModal2");
+const btn2 = document.getElementById("addBookBtn");
+const span2 = document.getElementsByClassName("close2")[0];
+const form = document.getElementById("addBookForm");
+const dot = document.querySelector(".dot");
+const dropdown = document.querySelector(".dropdown2");
+
+// When the user clicks the button, open the modal
+btn.onclick = function () {
+    modal.style.display = "block";
+};
+
+// When the user clicks on the close button, close the modal
+closeBtn.onclick = function () {
+    modal.style.display = "none";
+};
+
+// working with the dropdown
+function toggleDropdown() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Toggle dropdown visibility when dot is clicked
+dot.addEventListener("click", function () {
+    dropdown.style.display =
+        dropdown.style.display === "block" ? "none" : "block";
+});
+
+// Close dropdown when user clicks outside of it
+document.addEventListener("click", function (event) {
+    if (!dropdown.contains(event.target) && !dot.contains(event.target)) {
+        dropdown.style.display = "none";
+    }
+});
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function (event) {
+    if (!event.target.matches(".dropbtn") && event.target == modal) {
+        modal.style.display = "none";
+        let dropdowns = document.getElementsByClassName("dropdown-content");
+        for (let i = 0; i < dropdowns.length; i++) {
+            let openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+                openDropdown.classList.remove("show");
+            }
+        }
+    }
+};
+
 // Function to perform live search and update UI
 function performSearch(query) {
     const filteredBooks = books.filter(
@@ -198,17 +195,21 @@ function displaySearchResults(results) {
         const item = document.createElement("div");
         item.classList.add("item");
         item.innerHTML = `
-        <p>${book.id}</p>
-        <div class="itemi">
-          <input placeholder="Choose file" type="file">
-        </div>
-        <p>${book.title}</p>
-        <p>${book.author}</p>
-        <p>${book.year}</p>
-        <div class="catdot">
-          <p>${book.category}</p>
-          <p class="dot">···</p>
-          <button class="details-btn" data-id="${book.id}">Details</button>
+        <div class="item">
+            <p>${book.id + 1}</p>
+
+            <div class="itemi">
+                <img src=${book.img} alt="image"/>            
+            </div>
+
+            <p>${book.title}</p>
+            <p>${book.author}</p>
+            <p>${book.date}</p>
+
+            <div class="catdot">
+                <p>${book.category}</p>
+                <p class="dot">···</p>
+            </div>
         </div>
       `;
         itemContainer.appendChild(item);
@@ -267,31 +268,6 @@ function liveSearch() {
     });
 }
 
-// HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-// HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-// hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
-// HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-// HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-// hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
-// HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-// HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-// hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
-// HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-// HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-// hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
-// HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-// HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-// hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
-
-// Get the modal
-const modal2 = document.getElementById("myModal2");
-
-// Get the button that opens the modal
-const btn2 = document.getElementById("addBookBtn");
-
-// Get the <span> element that closes the modal
-const span2 = document.getElementsByClassName("close2")[0];
-
 // When the user clicks the button, open the modal
 btn2.onclick = function () {
     modal2.style.display = "block";
@@ -310,7 +286,6 @@ window.onclick = function (event) {
 };
 
 // Form submission logic
-const form = document.getElementById("addBookForm");
 form.addEventListener("submit", function (event) {
     event.preventDefault();
     const formData = new FormData(form);
@@ -350,3 +325,68 @@ function updateBookList() {
         bookList.appendChild(li);
     });
 }
+
+// Function to display books based on search and filter
+function displayBooks() {
+    const searchTerm = searchInput.value.toLowerCase();
+    const selectedCategory = categoryFilter.value.toLowerCase();
+
+    const filteredBooks = books.filter((book) => {
+        const titleMatch = book.title.toLowerCase().includes(searchTerm);
+        const categoryMatch =
+            selectedCategory === "" ||
+            book.category.toLowerCase() === selectedCategory;
+        return titleMatch && categoryMatch;
+    });
+
+    booksList.innerHTML = ""; // Clear previous results
+
+    filteredBooks.forEach((book) => {
+        const bookCard = document.createElement("div");
+        bookCard.classList.add("book-card");
+        bookCard.innerHTML = `
+        <div class="item">
+            <p>${book.id + 1}</p>
+
+            <div class="itemi">
+                <img class="admin-img" src="${book.img}" alt="image"/>
+            </div>
+
+            <p>${book.title}</p>
+            <p>${book.author}</p>
+            <p>${book.date}</p>
+
+            <div class="catdot">
+                <p>${book.category}</p>
+                <div class="dot deleteBtn">
+                    <img width="24" height="24" src="https://img.icons8.com/3d-fluency/24/close-window.png" alt="close-window"/>
+                </div>
+            </div>
+        </div>
+      `;
+
+        // Attach event listener to delete button
+        const deleteBtn = bookCard.querySelector(".deleteBtn");
+        deleteBtn.addEventListener("click", () => {
+            deleteBook(book.id); // Call deleteBook function with book id
+        });
+
+        booksList.appendChild(bookCard);
+    });
+}
+
+// Function to delete a book from the array and update the display
+function deleteBook(bookId) {
+    const index = books.findIndex((book) => book.id === bookId);
+    if (index !== -1) {
+        books.splice(index, 1); // Remove book from array
+        displayBooks(); // Re-render the book list
+    }
+}
+
+// Event listeners for input and select change
+searchInput.addEventListener("input", displayBooks);
+categoryFilter.addEventListener("change", displayBooks);
+
+// Initial display of books
+displayBooks();

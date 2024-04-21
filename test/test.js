@@ -187,3 +187,65 @@ function updateBookList() {
         bookList.appendChild(li);
     });
 }
+
+// Function to add a new book to the beginning of the books array
+function addBook(formData) {
+    const newBook = {
+        id: books.length,
+        title: formData.get("title"),
+        img: formData.get("img"),
+        author: formData.get("author"),
+        date: parseInt(formData.get("date")),
+        category: formData.get("category"),
+        rating: parseFloat(formData.get("rating")),
+    };
+    books.unshift(newBook);
+    updateBookList();
+}
+
+// Function to update the book list display
+function updateBookList() {
+    const bookList = document.getElementById("bookList");
+    bookList.innerHTML = ""; // Clear previous list items
+    books.forEach((book) => {
+        const li = document.createElement("li");
+        li.dataset.bookId = book.id;
+        li.textContent = `${book.title} by ${book.author}`;
+        const deleteBtn = document.createElement("button");
+        deleteBtn.classList.add("deleteBtn");
+        deleteBtn.textContent = "Delete";
+        li.appendChild(deleteBtn);
+        bookList.appendChild(li);
+    });
+}
+
+// Function to delete a book from the books array
+function deleteBook(id) {
+    books = books.filter((book) => book.id !== id);
+    updateBookList();
+}
+
+// Initialize book list on page load
+updateBookList();
+
+// Event delegation to handle delete button clicks
+const bookList = document.getElementById("bookList");
+bookList.addEventListener("click", function (event) {
+    if (event.target.classList.contains("deleteBtn")) {
+        const li = event.target.parentElement;
+        const bookId = parseInt(li.dataset.bookId, 10);
+        deleteBook(bookId);
+    }
+});
+
+// Live search functionality
+const searchInput = document.getElementById("searchInput");
+searchInput.addEventListener("input", function () {
+    const searchTerm = searchInput.value.toLowerCase().trim();
+    const filteredBooks = books.filter(
+        (book) =>
+            book.title.toLowerCase().includes(searchTerm) ||
+            book.author.toLowerCase().includes(searchTerm)
+    );
+    updateBookList(filteredBooks);
+});

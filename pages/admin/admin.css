@@ -89,6 +89,12 @@ h6 {
     font-family: "Space Grotesk";
 }
 
+select {
+    border: 1px solid var(--border);
+    padding: 10px;
+    font-family: "Space Grotesk";
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -319,6 +325,13 @@ p {
     border-left: none;
     border-top: none;
     transition: ease-in-out 0.5s;
+    align-items: center;
+}
+
+.admin-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
 }
 
 .item:hover {
@@ -355,18 +368,6 @@ p {
 }
 
 .dot {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20px;
-    height: 20px;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.dot:hover {
-    background-color: var(--border);
 }
 
 /* Style for dropdown */
@@ -442,7 +443,7 @@ p {
 }
 
 .filter2:hover {
-    background-color: var(--bg);
+    background-color: #000000c5;
 }
 
 .filter2 p {
@@ -472,6 +473,67 @@ p {
     border-radius: 10px;
     border: 1px solid #888;
     width: 40%;
+}
+
+.modadd {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+}
+
+.modadd h1 {
+    padding: 0;
+    margin: 0;
+}
+
+#addBookForm {
+    padding-top: 5px;
+}
+
+#addBookForm button {
+    cursor: pointer;
+    width: 30%;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* Center modal on screen */
+    border-radius: 10px;
+    border: 1px solid #888;
+    width: 40%;
+    padding: 20px;
+}
+
+.form-group {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    color: grey;
+    font-size: smaller;
+}
+
+.form-group input {
+    padding: 10px;
+    border: 1px solid var(--border);
 }
 
 /* Close button */
